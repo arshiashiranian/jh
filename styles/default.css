@@ -1,0 +1,360 @@
+﻿@font-face {
+    src: url('BebasNeue-Regular.ttf');
+    font-family: myfont;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-family: myfont;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(13,12,10,255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(233,158,91,255);
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: white;
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(13,12,10,255);
+}
+
+.section {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.image {
+    width: 35%;
+}
+
+.image2 {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+.headeritems {
+    width: 27%;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.headertext {
+    color: rgba(233,158,91,255);
+    font-size: 80px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.menucontainer {
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+}
+
+.hiddenmenucontainer {
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+    display: none;
+}
+
+.menuitem {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    display: block;
+    font-size: 30px;
+    border: 3px solid rgba(233,158,91,255);
+    border-radius: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+    .menuitem:hover {
+        background-color: rgba(233,158,91,255);
+    }
+
+.header2 {
+    background-color: rgba(13,12,10,255);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 60px;
+    margin-top: 15px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+    font-size: 30px;
+}
+
+    .nav-link:hover {
+        color: rgba(233,158,91,255);
+    }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.header2 {
+    width: 100%;
+    background-color: rgba(13,12,10,255);
+    display: none;
+}
+
+.select {
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.appointment {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+.announcements {
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+}
+
+.text {
+    font-size: 40px;
+    color: white;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.line {
+    background-color: rgba(233,158,91,255);
+    width: 70%;
+    height: 5px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.table {
+    color: white;
+    font-size: 30px;
+}
+
+td, th {
+    border: 3px solid rgba(233,158,91,255);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: white;
+    color: rgba(233,158,91,255);
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: rgba(233,158,91,255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:1000px) {
+    .image {
+        width: 55%;
+    }
+
+    .menuitem {
+        width: 170px;
+        font-size: 25px;
+    }
+
+    .headertext {
+        font-size: 70px;
+    }
+}
+
+@media(max-width:800px) {
+    .appointment {
+        display: block;
+        background-color: transparent;
+    }
+
+    .selectcontainer {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .table {
+        display: block;
+        margin: auto;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:600px) {
+    .header {
+        display: block;
+    }
+
+    .headeritems {
+        width: 100%;
+    }
+
+    .menucontainer {
+        display: none;
+    }
+
+    .hiddenmenucontainer {
+        display: block;
+    }
+
+    .image {
+        display: block;
+        margin: auto;
+        width: 75%;
+        margin-bottom: 50px;
+    }
+
+    .image2 {
+        display: block;
+        margin: auto;
+        width: 75%;
+        margin-bottom: 50px;
+        margin-top: 80px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header2 {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+    .nav-menu {
+        position: fixed;
+        left: -200%;
+        top: 70px;
+        grid-gap: 0;
+        flex-direction: column;
+        background-color: rgba(13,12,10,255);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: -7%;
+    }
+}
